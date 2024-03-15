@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Montserrat:wght@300;400;500&display=swap');
+
+
+
+/* Variables */
+:root {
+  /* Fonts */
+  --heading: 'Fredoka', sans-serif;
+  --body: 'Montserrat', sans-serif;
+
+  /* Colors */
+  --primary: #ffcd08;
+  --secondary: #ff6b35;
+  /* --secondary: #cddc39; */
+  /* --secondary: #ffc107; */
+  --dark: #0c0d0d;
+  --lightgray: lightgray;
+  --dark-alt: #313131;
+  --light: #ffffff;
+  --light-alt: #f9f9f9;
+}
+
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: thin;
+}
+
+*::selection {
+  background: var(--dark);
+  color: var(--light);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body);
+  background: var(--light);
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--para);
+  color: var(--dark-alt);
+  line-height: 160%;
+  letter-spacing: 0.5px;
+}
+
+p a {
+  color: var(--dark-alt);
+  transition: 0.5s ease all;
+}
+
+p a:hover {
+  color: var(--dark);
+}
+
+/* Background */
+.bg-primary {
+  background: var(--primary) !important;
+}
+
+.bg-secondary {
+  background: var(--secondary) !important;
+}
+
+.bg-light {
+  background: var(--light) !important;
+}
+
+.bg-light-alt {
+  background: var(--light-alt) !important;
+}
+
+.bg-dark {
+  background: var(--dark) !important;
+}
+
+.bg-dark-alt {
+  background: var(--dark-alt) !important;
+}
+
+/* Color */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-light {
+  color: var(--light) !important;
+}
+
+.text-light-alt {
+  color: var(--light-alt) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+/* Section */
+.section {
+  width: 100%;
+  padding: 100px 0;
+  background: var(--light);
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1360px;
+  }
+}
+
+
+
+/* Headings */
+.heading {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  font-family: var(--heading);
+}
+
+.sub-heading {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: var(--sub-heading);
+  font-weight: 500;
+  color: var(--dark);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tertiary-heading {
+  font-size: 18px;
+  font-family: var(--sub-heading);
+  font-weight: 500;
+  color: var(--dark);
+}
+
+/* Button */
+.button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 40px;
+  display: inline-block;
+  border-radius: 22px;
+  background-color: var(--secondary);
+  transition: all 0.5s ease;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: var(--dark);
+  transition: all 0.5s ease;
+  color: var(--light);
+}
